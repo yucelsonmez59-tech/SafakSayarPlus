@@ -245,3 +245,11 @@ button{font:inherit}
 @media(max-width:420px){
   .delete-steps li{grid-template-columns:30px 1fr;padding:11px}.delete-request-box{display:block}.delete-email-line{margin-top:10px!important;text-align:center}.delete-security-warning{grid-template-columns:25px 1fr}
 }
+
+/* Critical media guards */
+.app-icon-mini{flex:0 0 42px;overflow:hidden}
+.app-icon-mini img{display:block;width:42px!important;height:42px!important;max-width:42px!important;object-fit:cover}
+.delete-status-icon{width:44px!important;height:44px!important;overflow:hidden}
+.delete-status-icon svg{display:block;width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important}
+.delete-mail-button svg{display:block;width:18px!important;height:18px!important;max-width:18px!important;max-height:18px!important}
+.delete-note svg{display:block;width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important}
