@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yucelsonmez59-tech.github.io/safaksayar-privacy/sitemap.xml
