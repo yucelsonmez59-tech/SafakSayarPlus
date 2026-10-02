@@ -100,4 +100,27 @@
       });
     });
   });
+
+
+  const progressBar = document.querySelector('[data-scroll-progress]');
+  const updateProgress = () => {
+    if (!progressBar) return;
+    const doc = document.documentElement;
+    const max = Math.max(1, doc.scrollHeight - window.innerHeight);
+    const ratio = Math.min(1, Math.max(0, window.scrollY / max));
+    progressBar.style.width = (ratio * 100).toFixed(2) + '%';
+  };
+  updateProgress();
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+
+  if (!reducedMotion && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    document.querySelectorAll('.feature-card,.showcase-card,.flow-card,.principle-card').forEach((card) => {
+      card.addEventListener('pointermove', (event) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (event.clientX - rect.left) + 'px');
+        card.style.setProperty('--my', (event.clientY - rect.top) + 'px');
+      });
+    });
+  }
 })();
