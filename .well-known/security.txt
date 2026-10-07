@@ -1,0 +1,4 @@
+Contact: mailto:info@yucelsonmez.com.tr
+Expires: 2027-10-07T00:00:00.000Z
+Preferred-Languages: tr, en
+Canonical: https://yucelsonmez.com.tr/.well-known/security.txt

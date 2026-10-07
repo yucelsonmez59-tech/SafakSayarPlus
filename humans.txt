@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Yücel Sönmez
+Site: https://yucelsonmez.com.tr/
+GitHub: https://github.com/yucelsonmez59-tech
+Contact: info@yucelsonmez.com.tr
+
+/* SITE */
+Language: Turkish
+Stack: Static HTML, CSS, dependency-free JavaScript
+Products: ŞafakSayar Plus, Mesai Pro
+Last update: 2026-10-07

@@ -6,10 +6,17 @@
   <meta name="theme-color" content="#07161d">
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="index,follow">
+  <meta name="author" content="Yücel Sönmez">
+  <meta name="application-name" content="Mesai Pro">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Mesai Pro — Maaş, Mesai ve Çalışma Takibi</title>
   <meta name="description" content="Mesai Pro; maaş, fazla mesai, izin, rapor, avans, dönem ve rapor takibini cihazda yöneten offline-first iOS ve Android uygulamasıdır.">
   <link rel="canonical" href="https://yucelsonmez.com.tr/mesaitakip/">
+  <link rel="alternate" hreflang="tr-TR" href="https://yucelsonmez.com.tr/mesaitakip/">
+  <link rel="alternate" hreflang="x-default" href="https://yucelsonmez.com.tr/mesaitakip/">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="icon" href="/assets/ys-mark.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="/assets/mesai-calendar.webp" fetchpriority="high">
   <link rel="stylesheet" href="/styles.css?v=20261007d">
   <link rel="stylesheet" href="/mesaitakip/mesai.css?v=20261007f">
   <script defer src="/mesaitakip/mesai.js?v=20261007f"></script>
@@ -21,7 +28,10 @@
   <meta property="og:description" content="Takvim, maaş dönemi, mesai, izin, rapor, avans, raporlama ve yedekleme tek bir mobil üründe.">
   <meta property="og:url" content="https://yucelsonmez.com.tr/mesaitakip/">
   <meta property="og:image" content="https://yucelsonmez.com.tr/assets/mesai-calendar.webp">
+  <meta property="og:image:alt" content="Mesai Pro Mesailerim ekranı">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mesai Pro — Maaş, Mesai ve Çalışma Takibi">
+  <meta name="twitter:description" content="Takvim, maaş dönemi, mesai, izin, rapor ve yedekleme tek bir offline-first mobil üründe.">
 
   <script type="application/ld+json">
   {
@@ -50,6 +60,7 @@
       <a href="#urun">Ürün</a>
       <a href="#deneyim">Deneyim</a>
       <a href="#altyapi">Altyapı</a>
+      <a href="#sss">SSS</a>
       <a href="/mesaitakip/privacy/">Gizlilik</a>
       <a href="/mesaitakip/support/">Destek</a>
       <a class="m-nav-back" href="/">Yücel Sönmez <span>↗</span></a>
@@ -80,7 +91,7 @@
       <div class="m-device-stage m-reveal m-reveal-delay" data-device-stage>
         <div class="m-aura"></div>
         <figure class="m-phone m-phone-main">
-          <img src="/assets/mesai-calendar.webp" width="320" height="693" alt="Mesai Pro Mesailerim ekranı; Ekim 2026 takvimi, maaş dönemi özeti ve seçili gün kartı" decoding="async">
+          <img src="/assets/mesai-calendar.webp" width="320" height="693" alt="Mesai Pro Mesailerim ekranı; Ekim 2026 takvimi, maaş dönemi özeti ve seçili gün kartı" loading="eager" fetchpriority="high" decoding="async">
         </figure>
         <figure class="m-phone m-phone-left" aria-hidden="true">
           <img src="/assets/mesai-reports.webp" width="320" height="693" alt="" loading="lazy" decoding="async">
@@ -113,11 +124,11 @@
       <div class="m-showcase m-reveal">
         <div class="m-showcase-copy">
           <div class="m-tabs" role="tablist" aria-label="Mesai Pro ekranları">
-            <button class="is-active" type="button" role="tab" aria-selected="true" data-screen="calendar">Mesailerim</button>
-            <button type="button" role="tab" aria-selected="false" data-screen="reports">Raporlar</button>
-            <button type="button" role="tab" aria-selected="false" data-screen="settings">Ayarlar</button>
+            <button class="is-active" id="tab-calendar" type="button" role="tab" aria-selected="true" aria-controls="m-screen-panel" tabindex="0" data-screen="calendar">Mesailerim</button>
+            <button id="tab-reports" type="button" role="tab" aria-selected="false" aria-controls="m-screen-panel" tabindex="-1" data-screen="reports">Raporlar</button>
+            <button id="tab-settings" type="button" role="tab" aria-selected="false" aria-controls="m-screen-panel" tabindex="-1" data-screen="settings">Ayarlar</button>
           </div>
-          <div class="m-screen-copy" aria-live="polite">
+          <div class="m-screen-copy" id="m-screen-panel" role="tabpanel" aria-labelledby="tab-calendar" aria-live="polite">
             <span data-screen-kicker>01 / GÜNLÜK TAKİP</span>
             <h3 data-screen-title>Ayı tek bakışta oku.</h3>
             <p data-screen-text>Gün seçimi, maaş dönemi özeti ve günlük kayıt aksiyonları aynı akışta. Mesai, izin/rapor ve gün etkisi takvim bağlamından kopmadan yönetiliyor.</p>
@@ -201,6 +212,34 @@
           <a href="/mesaitakip/terms/"><span>Kullanım Koşulları</span><b>↗</b></a>
           <a href="/mesaitakip/support/"><span>Destek</span><b>↗</b></a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="m-section m-faq-section" id="sss">
+    <div class="m-shell m-faq-grid">
+      <div class="m-faq-intro m-reveal">
+        <span class="m-kicker">SIK SORULANLAR</span>
+        <h2>Veri, hesaplama ve kullanım net olsun.</h2>
+        <p>Mesai Pro'nun temel çalışma biçimi ve veri yaklaşımıyla ilgili en önemli cevaplar.</p>
+      </div>
+      <div class="m-faq-list m-reveal">
+        <details open>
+          <summary>Mesai Pro için hesap açmak gerekiyor mu?<span>+</span></summary>
+          <p>Hayır. Mevcut sürümde kullanıcı hesabı veya giriş sistemi bulunmuyor.</p>
+        </details>
+        <details>
+          <summary>Çalışma ve maaş kayıtlarım sunucuya gidiyor mu?<span>+</span></summary>
+          <p>Mevcut sürümde çalışma ve finans kayıtları cihazın yerel uygulama alanında tutuluyor; geliştirici sunucusuna otomatik olarak gönderilmiyor.</p>
+        </details>
+        <details>
+          <summary>PDF ve yedek dosyaları nasıl dışa aktarılıyor?<span>+</span></summary>
+          <p>PDF raporu veya yedek oluşturma işlemini kullanıcı başlatır. Dosyanın hangi uygulamaya ya da konuma gönderileceğini işletim sisteminin paylaşım arayüzünden kullanıcı seçer.</p>
+        </details>
+        <details>
+          <summary>Uygulamadaki maaş hesapları resmî bordro yerine geçer mi?<span>+</span></summary>
+          <p>Hayır. Sonuçlar kişisel takip ve tahmin amaçlıdır; resmî bordro, muhasebe kaydı veya hukuki danışmanlık yerine geçmez.</p>
+        </details>
       </div>
     </div>
   </section>

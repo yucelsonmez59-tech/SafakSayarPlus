@@ -1,9 +1,14 @@
 {
+  "id":"/",
   "name":"Yücel Sönmez — Software Developer",
   "short_name":"Yücel Sönmez",
+  "description":"Yücel Sönmez'in mobil ürün ve software developer portfolyosu.",
+  "lang":"tr-TR",
   "start_url":"/",
+  "scope":"/",
   "display":"standalone",
   "background_color":"#07111a",
   "theme_color":"#07111a",
+  "categories":["developer","portfolio","productivity"],
   "icons":[{"src":"/assets/ys-mark.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
 }
