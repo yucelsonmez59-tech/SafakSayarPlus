@@ -382,3 +382,5 @@ body:not(.landing) .navlinks a{min-height:38px;display:inline-flex;align-items:c
 .site-menu a.active{color:#fff}
 @supports(content-visibility:auto){.section,.final-cta{content-visibility:auto;contain-intrinsic-size:900px}}
 @media(prefers-reduced-transparency:reduce){.site-header.scrolled,.js .site-menu,.product-ribbon{backdrop-filter:none;background:#07111c}}
+
+.navlinks a[aria-current="page"]{color:var(--amber2);text-decoration:underline;text-decoration-color:var(--amberLine);text-underline-offset:5px}
