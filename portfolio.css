@@ -97,3 +97,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent2);outline-of
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}.p-reveal{opacity:1;transform:none;transition:none}.p-btn,.p-project,.p-menu>a:after{transition:none}
 }
+
+.p-project:nth-child(2){min-height:560px}.p-project-peek{position:absolute;right:20px;top:86px;width:132px;height:285px;border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:4px;background:#07161d;box-shadow:0 24px 55px rgba(0,0,0,.35);transform:rotate(3deg);overflow:hidden}.p-project-peek img{width:100%;height:100%;object-fit:cover;border-radius:17px}.p-project:nth-child(2) .p-project-copy{max-width:calc(100% - 120px)}
+@media(max-width:980px){.p-project:nth-child(2){min-height:500px}.p-project-peek{right:28px;width:124px;height:268px}}
+@media(max-width:760px){.p-project:nth-child(2){min-height:560px}.p-project-peek{position:relative;right:auto;top:auto;width:118px;height:255px;margin:24px 0 20px;transform:rotate(0)}.p-project:nth-child(2) .p-project-copy{max-width:none}}
