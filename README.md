@@ -1,32 +1,18 @@
-# ŞafakSayar Plus — Public Privacy & Support Site
+# yucelsonmez.com.tr
 
-Public static pages for **ŞafakSayar Plus**.
+Public static website for **Yücel Sönmez** and the published product/support pages for **ŞafakSayar Plus** and **Mesai Pro**.
 
-## Pages
-- `index.html` — public landing page
-- `privacy.html` — Privacy Policy
-- `terms.html` — Terms of Use
-- `community.html` — Community Rules
-- `support.html` — Support information
-- `delete-account.html` — Account & local-data deletion instructions
-- `data-safety.html` — user-facing data usage summary
-- `404.html` — custom not-found page
-- `styles.css` — responsive shared design
+## Main routes
+- `/` — developer portfolio
+- `/safaksayar/` — ŞafakSayar Plus product page
+- `/mesaitakip/` — Mesai Pro product page
+- Each product keeps its existing privacy, support, terms and data-safety routes.
+- `/404.html` — shared not-found page
 
-## GitHub Pages setup
-In GitHub:
-1. Settings
-2. Pages
-3. Build and deployment → **Deploy from a branch**
-4. Branch → **main**
-5. Folder → **/(root)**
-6. Save
+## Stack
+Static HTML, CSS and small dependency-free JavaScript. No runtime framework or external web-font dependency.
 
-Expected URLs:
-- Home: https://yucelsonmez59-tech.github.io/safaksayar-privacy/
-- Privacy: https://yucelsonmez59-tech.github.io/safaksayar-privacy/privacy.html
-- Terms: https://yucelsonmez59-tech.github.io/safaksayar-privacy/terms.html
-- Support: https://yucelsonmez59-tech.github.io/safaksayar-privacy/support.html
-- Account deletion: https://yucelsonmez59-tech.github.io/safaksayar-privacy/delete-account.html
+## Deployment
+GitHub Pages → `main` → repository root, with `CNAME` set to `yucelsonmez.com.tr`.
 
-Last updated: 2026-10-02.
+Existing public URLs are intentionally preserved.

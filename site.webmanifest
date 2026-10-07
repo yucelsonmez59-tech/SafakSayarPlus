@@ -1,0 +1,9 @@
+{
+  "name":"Yücel Sönmez — Software Developer",
+  "short_name":"Yücel Sönmez",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#07111a",
+  "theme_color":"#07111a",
+  "icons":[{"src":"/assets/ys-mark.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}

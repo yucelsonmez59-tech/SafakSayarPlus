@@ -17,3 +17,12 @@ body{background:radial-gradient(circle at 82% 0,rgba(70,201,184,.09),transparent
 .doc .callout{margin-top:24px;padding:16px 18px;border:1px solid var(--amberLine);border-radius:14px;background:rgba(70,201,184,.06)}
 .doc .callout p{margin:0}
 @media(max-width:760px){.mesai-hero{padding-top:44px}.mesai-badges{gap:7px}}
+
+/* Product polish — shared route unchanged */
+.mesai-hero{position:relative}
+.mesai-hero:before{content:"";position:absolute;right:0;top:34px;width:260px;height:260px;border:1px solid rgba(70,201,184,.07);border-radius:50%;box-shadow:0 0 0 42px rgba(70,201,184,.018);pointer-events:none}
+.mesai-hero h1{text-wrap:balance}
+.mesai-hero .actions{position:relative}
+.mesai-badges span{backdrop-filter:blur(10px)}
+.mesai-links .btn.primary{box-shadow:0 12px 34px rgba(70,201,184,.12)}
+body:not(.landing) .mesai-mark{flex:0 0 42px}

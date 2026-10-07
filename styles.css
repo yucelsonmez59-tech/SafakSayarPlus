@@ -343,3 +343,39 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   .journey-track{padding-top:28px}.journey-line{top:56px}.journey-stop{min-height:142px}
   .cta-assurance{gap:6px}.cta-assurance span{font-size:8px;padding:6px 8px}
 }
+
+
+/* ===== Production quality layer — 2026-10-07 ===== */
+html{scroll-padding-top:88px;text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{min-height:100vh}
+::selection{background:rgba(231,162,74,.25);color:#fff}
+.wrap h1,.wrap h2,.section-heading h2,.journey-head h2,.principles-heading h2{text-wrap:balance}
+.doc{max-width:920px;margin-inline:auto}
+.doc p,.doc li{max-width:78ch}
+.doc a{text-decoration-thickness:1px;text-underline-offset:3px}
+.doc a:hover{text-decoration:underline}
+.doc table{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.doc th{background:rgba(255,255,255,.025)}
+.doc td,.doc th{line-height:1.55}
+body:not(.landing) .wrap>.nav{position:sticky;top:0;z-index:40;margin-inline:-8px;padding:12px 8px 18px;background:linear-gradient(180deg,rgba(7,17,28,.96),rgba(7,17,28,.78) 72%,transparent);backdrop-filter:blur(16px)}
+body:not(.landing) .navlinks a{min-height:38px;display:inline-flex;align-items:center}
+.card,.doc,.privacy-card,.feature-card,.showcase-card,.flow-card,.principle-card{contain:layout paint style}
+@media(hover:hover) and (pointer:fine){
+  .doc a,.navlinks a,.footer-links a{transition:color .18s ease}
+}
+@media(max-width:760px){
+  .doc{padding:24px 20px;border-radius:22px}
+  .doc h2{font-size:22px}
+  body:not(.landing) .wrap>.nav{margin-inline:0;padding-inline:0}
+  .navlinks{gap:6px 12px}
+  .navlinks a{min-height:42px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important}
+}
+@media(prefers-contrast:more){
+  :root{--line:rgba(255,255,255,.2);--amberLine:rgba(231,162,74,.5)}
+  .doc,.card,.feature-card,.showcase-card,.flow-card,.principle-card{border-color:var(--line)}
+}
