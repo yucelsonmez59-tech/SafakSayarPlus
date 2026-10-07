@@ -1,0 +1,26 @@
+{
+  "primaryName": "Yücel Sönmez",
+  "asciiName": "Yucel Sonmez",
+  "canonical": "https://yucelsonmez.com.tr/",
+  "role": "Software Developer",
+  "focus": [
+    "Flutter",
+    "Mobile Software Developer",
+    "iOS",
+    "Android",
+    "Product Development"
+  ],
+  "profiles": [
+    "https://github.com/yucelsonmez59-tech"
+  ],
+  "projects": [
+    {
+      "name": "ŞafakSayar Plus",
+      "url": "https://yucelsonmez.com.tr/safaksayar/"
+    },
+    {
+      "name": "Mesai Pro",
+      "url": "https://yucelsonmez.com.tr/mesaitakip/"
+    }
+  ]
+}
