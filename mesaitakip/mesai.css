@@ -1,0 +1,19 @@
+:root{
+  --amber:#46c9b8;
+  --amber2:#7de2d6;
+  --amber3:#b6f2eb;
+  --amberLine:rgba(70,201,184,.3);
+}
+body{background:radial-gradient(circle at 82% 0,rgba(70,201,184,.09),transparent 28%),var(--bg)}
+.mesai-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#15343a,#0b1d25);border:1px solid var(--amberLine);box-shadow:0 8px 24px rgba(0,0,0,.28);color:var(--amber2);font-weight:900;font-size:18px}
+.mesai-hero{padding:72px 0 32px}
+.mesai-hero .lead{max-width:780px}
+.mesai-badges{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.mesai-badges span{padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);font-size:11px;color:#aebdca}
+.mesai-badges strong{color:var(--amber2)}
+.mesai-links{margin-top:32px}
+.card a{color:var(--amber2)}
+.card strong{color:#fff}
+.doc .callout{margin-top:24px;padding:16px 18px;border:1px solid var(--amberLine);border-radius:14px;background:rgba(70,201,184,.06)}
+.doc .callout p{margin:0}
+@media(max-width:760px){.mesai-hero{padding-top:44px}.mesai-badges{gap:7px}}
