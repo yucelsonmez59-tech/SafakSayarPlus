@@ -1,18 +1,30 @@
 # yucelsonmez.com.tr
 
-Public static website for **Yücel Sönmez** and the published product/support pages for **ŞafakSayar Plus** and **Mesai Pro**.
+Public static website for **Yücel Sönmez** plus the product, support and legal pages for **ŞafakSayar Plus** and **Mesai Pro**.
 
-## Main routes
-- `/` — developer portfolio
+## Routes
+- `/` — software developer portfolio
 - `/safaksayar/` — ŞafakSayar Plus product page
 - `/mesaitakip/` — Mesai Pro product page
-- Each product keeps its existing privacy, support, terms and data-safety routes.
+- Existing privacy, terms, support, data-safety, community and account-deletion URLs remain stable.
 - `/404.html` — shared not-found page
+- `/.well-known/security.txt` — security contact
 
 ## Stack
-Static HTML, CSS and small dependency-free JavaScript. No runtime framework or external web-font dependency.
+Static semantic HTML, CSS and small dependency-free JavaScript. No runtime framework, web-font request or client-side analytics dependency.
+
+## Quality checks
+The repository includes a dependency-free static validator.
+
+```bash
+npm run validate
+```
+
+It checks internal links/assets, anchors, duplicate IDs, canonical/title basics, JSON-LD, `target="_blank"` safety, JavaScript syntax, CSS brace balance, manifest JSON, sitemap routes, CNAME and robots configuration.
+
+The same validation runs on push and pull requests through `.github/workflows/site-quality.yml`.
 
 ## Deployment
 GitHub Pages → `main` → repository root, with `CNAME` set to `yucelsonmez.com.tr`.
 
-Existing public URLs are intentionally preserved.
+Public URLs are intentionally preserved.

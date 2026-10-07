@@ -1,0 +1,9 @@
+{
+  "name":"yucelsonmez-site",
+  "private":true,
+  "version":"1.0.0",
+  "description":"Static developer portfolio and product support pages.",
+  "type":"module",
+  "scripts":{"validate":"node scripts/validate-site.mjs"},
+  "engines":{"node":">=20"}
+}
