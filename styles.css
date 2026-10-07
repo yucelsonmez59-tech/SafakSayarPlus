@@ -359,7 +359,6 @@ body{min-height:100vh}
 .doc td,.doc th{line-height:1.55}
 body:not(.landing) .wrap>.nav{position:sticky;top:0;z-index:40;margin-inline:-8px;padding:12px 8px 18px;background:linear-gradient(180deg,rgba(7,17,28,.96),rgba(7,17,28,.78) 72%,transparent);backdrop-filter:blur(16px)}
 body:not(.landing) .navlinks a{min-height:38px;display:inline-flex;align-items:center}
-.card,.doc,.privacy-card,.feature-card,.showcase-card,.flow-card,.principle-card{contain:layout paint style}
 @media(hover:hover) and (pointer:fine){
   .doc a,.navlinks a,.footer-links a{transition:color .18s ease}
 }
