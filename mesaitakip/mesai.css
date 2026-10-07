@@ -42,3 +42,5 @@ body:not(.m-page){--amber:#46c9b8;--amber2:#7de2d6;--amber3:#b6f2eb;--amberLine:
 @media(max-width:760px){.m-faq-list summary{min-height:66px;font-size:13px}.m-faq-list p{padding-right:18px}}
 
 .m-mark-image,.mesai-mark-image{overflow:hidden;padding:0}.m-mark-image img,.mesai-mark-image img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
+
+.m-mark-product{font-size:10px;letter-spacing:.04em;font-weight:900}

@@ -139,3 +139,5 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent2);outline-of
 @media(max-width:760px){.p-pipeline{grid-template-columns:1fr}.p-pipeline article{min-height:190px}.p-pipeline small{margin-top:24px}.p-engineering-panel{padding:22px;gap:24px}.p-engineering-code>div{grid-template-columns:62px 1fr}.p-engineering-code em{grid-column:2;margin-top:-14px;padding-bottom:12px}}
 
 .p-app-icon-mesai img{width:100%;height:100%;object-fit:cover}
+
+.p-product-mark{font-size:12px;letter-spacing:.04em;font-weight:900}.p-product-mark span{display:block}
