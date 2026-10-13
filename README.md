@@ -35,3 +35,5 @@ GitHub Actions runs tests on branch pushes and PRs.
 ## Deployment safety
 
 Review the draft PR before merging. Merging to main switches the published design without changing the domain or old application URLs. Existing pages remain recoverable from Git history.
+
+Mesai Pusulam uses its official original iOS 1024×1024 application icon, copied byte-for-byte from `mesai-pro/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png` into `assets/mesai-pusulam-icon.png`. Screenshots remain unpopulated.

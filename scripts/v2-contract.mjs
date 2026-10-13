@@ -27,6 +27,8 @@ for(const page of pages){
 assert.match(read('index.html'),/Mesai Pusulam/);
 assert.match(read('index.html'),/ŞafakSayar/);
 assert.match(read('mesaitakip/index.html'),/id6815601696/);
+assert.match(read('mesaitakip/index.html'),/src="\/assets\/mesai-pusulam-icon\.png"/);
+assert.match(read('index.html'),/src="\/assets\/mesai-pusulam-icon\.png"/);
 assert.match(read('safaksayar/index.html'),/id6817507399/);
 assert.match(read('safaksayar/privacy/index.html'),/AdMob/);
 assert.match(read('safaksayar/delete-account/index.html'),/Hesap silme talebi gönder/);
