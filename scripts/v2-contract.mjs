@@ -62,4 +62,17 @@ for(const path of ['','privacy/','terms/','support/','data-safety/']){
 }
 for(const p of ['privacy.html','terms.html','support.html','delete-account.html','community.html','data-safety.html'])assert.match(read(p),/http-equiv="refresh"/,p+' root redirect');
 for(const obsolete of ['styles.css','portfolio.css','portfolio.js','script.js','mesaitakip/mesai.css','mesaitakip/mesai.js','assets/mesai-calendar.webp','assets/mesai-reports.webp','assets/mesai-settings.webp'])assert(!fs.existsSync(path.join(root,obsolete)),'old asset not removed: '+obsolete);
+// Real Mesai Pusulam gallery must include exactly the eight committed assets.
+const mesaiGallery=read('mesai-pusulam/index.html');
+const galleryAssets=["/assets/01-genel-gorunum.webp","/assets/02-mesai-ekle.webp","/assets/03-izin-ve-rapor.webp","/assets/04-tahmini-odeme.webp","/assets/05-kazanc-ve-kesinti.webp","/assets/06-maas-gecmisi.webp","/assets/07-pdf-raporu.webp","/assets/08-yedekleme.webp"];
+for(const asset of galleryAssets) {
+ assert(mesaiGallery.includes('src="'+asset+'"'),'missing screenshot '+asset);
+ assert(fs.existsSync(path.join(root,asset.slice(1))),'missing physical screenshot '+asset);
+}
+assert.equal((mesaiGallery.match(/class="mp-gallery-card"/g)||[]).length,8,'screenshot count must be eight');
+assert(!mesaiGallery.includes('Gerçek ekranlar <span class=\'accent\'>yakında.'),'placeholder text remains');
+assert(!mesaiGallery.includes('Ekran görüntüleri henüz eklenmedi'),'placeholder box remains');
+assert(mesaiGallery.includes('id="mp-gallery-dialog"'),'screenshot lightbox missing');
+assert(mesaiGallery.includes('href="/mesai-pusulam/gallery.css?v=1"'),'gallery styles missing');
+assert(mesaiGallery.includes('src="/mesai-pusulam/gallery.js?v=1"'),'gallery behavior missing');
 console.log('Site contracts OK:',urls.length,'canonical URLs, 5 Mesai redirects, old root redirects, assets and policy links.');
