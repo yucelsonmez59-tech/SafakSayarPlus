@@ -34,6 +34,8 @@ function internalTarget(url){
 }
 
 for(const file of htmlFiles){
+  // Google Search Console verification HTML is a token file, not a web page.
+  if(/^google[a-z0-9]+\.html$/i.test(file)) continue;
   const html=read(file);
   const redirect=/http-equiv=["']refresh["']/i.test(html);
   const is404=file==='404.html';
