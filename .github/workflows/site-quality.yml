@@ -2,7 +2,7 @@ name: Site Quality
 
 on:
   push:
-    branches: [main]
+    branches: [main, design/app-landing-v2-staging]
   pull_request:
 
 permissions:
@@ -20,4 +20,6 @@ jobs:
         with:
           node-version: '22'
       - name: Validate static site
-        run: node scripts/validate-site.mjs
+        run: npm run validate
+      - name: Verify v2 routes and disclosures
+        run: npm run test:v2
