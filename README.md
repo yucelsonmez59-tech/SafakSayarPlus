@@ -1,39 +1,45 @@
-# yucelsonmez.com.tr — V2 App Landing Design
+# Yücel Sönmez — Mobile Apps Website
 
-**Site:** https://yucelsonmez.com.tr
+**Canonical website:** https://yucelsonmez.com.tr/  
+**Source repository:** yucelsonmez59-tech/SafakSayarPlus  
+**Hosting:** GitHub Pages, main branch, repository root, custom domain via CNAME
 
-**Deployment:** GitHub Pages / main / repository root. Existing CNAME and static hosting remain unchanged.
+This is the **single canonical site source** for the developer homepage, **Mesai Pusulam** and **ŞafakSayar**.
 
-## Routes
+## Canonical paths
 
-- Home: `/`
-- Mesai Pusulam: `/mesaitakip/`
-- ŞafakSayar: `/safaksayar/`
-- Legal, support, account deletion: all existing `/mesaitakip/*` and `/safaksayar/*` URLs preserved
+| Section | Path |
+|---|---|
+| Homepage | `/` |
+| Mesai Pusulam | `/mesai-pusulam/` |
+| Mesai privacy | `/mesai-pusulam/privacy/` |
+| Mesai terms | `/mesai-pusulam/terms/` |
+| Mesai support | `/mesai-pusulam/support/` |
+| Mesai data safety | `/mesai-pusulam/data-safety/` |
+| ŞafakSayar | `/safaksayar/` |
+| Şafak privacy | `/safaksayar/privacy/` |
+| Şafak terms | `/safaksayar/terms/` |
+| Şafak support | `/safaksayar/support/` |
+| Şafak community | `/safaksayar/community/` |
+| Şafak data safety | `/safaksayar/data-safety/` |
+| Şafak account deletion | `/safaksayar/delete-account/` |
 
-Legacy redirect pages remain in place. The external `mesaitakip-privacy` GitHub Pages repository is not modified.
+**Redirect compatibility only:** `/mesaitakip/` and its privacy, terms, support and data-safety paths are simple HTML redirects to the canonical Mesai Pusulam equivalents. Root legacy links like `/privacy.html` remain redirects, not duplicate documents. GitHub Pages does not provide editable HTTP 301 rules, so these are HTML meta redirects with `noindex` and canonical to their new destinations. Update external store links when editable; then these old compatibility routes can be retired later if desired.
 
-## Design
+## Clean source
 
-Visual direction inspired by Bohdan's `app-landing` (MIT): https://github.com/bohd4nx/app-landing
+Shared `v2.css` and `v2.js`, native static HTML and policy documents; no paid hosting, runtime backend, CMS, template mockup photos, fake reviews, or extra landing framework. Original Mesai Pusulam iOS icon and ŞafakSayar app icon are maintained. Real screenshot spaces intentionally remain empty until final product screenshots are ready.
 
-This is a dependency-free HTML/CSS/JS adaptation for the current branch-based GitHub Pages publishing setup, with violet accents, dotted grid, light/dark/system themes, responsive sections and individual product/legal pages.
+Original visual inspiration: Bohdan's `app-landing` under MIT. Attribution/license retained as `LICENSE-app-landing`.
 
-Real application screenshots are intentionally not included yet. No fabricated customer reviews, ratings, install counts or subscription pricing.
+## Compliance
 
-## Transparency
+App Store Connect and Google Play Console privacy, support and account-deletion URLs must be kept consistent with the released apps. Keep `app-ads.txt`, `CNAME`, Google Search Console verification, `robots.txt`, `sitemap.xml` and `/.well-known/security.txt` available. Disclosures are reviewed against SDKs/actual builds, and the site alone does not guarantee store approval.
 
-Product names have been corrected; all official paths remain intact. Advertising, premium and data processing descriptions must remain consistent with *the particular released app version*, relevant SDKs and declarations in App Store Connect/Google Play Console. Website compliance does not itself guarantee approval.
+## Tests
 
-The original `app-ads.txt`, Google verification, robots, sitemap, security contact and domain files remain intact.
+`npm test` runs both the built-in static link/HTML/JS/CSS checks and the canonical route/redirect contract tests. GitHub Actions runs checks for commits and pull requests. A successful build is not a substitute for a visual browser smoke test.
 
-## Quality
+## Historical second website repo
 
-`npm test`: existing static validator plus V2 product/routes contract.
-GitHub Actions runs tests on branch pushes and PRs.
-
-## Deployment safety
-
-Review the draft PR before merging. Merging to main switches the published design without changing the domain or old application URLs. Existing pages remain recoverable from Git history.
-
-Mesai Pusulam uses its official original iOS 1024×1024 application icon, copied byte-for-byte from `mesai-pro/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png` into `assets/mesai-pusulam-icon.png`. Screenshots remain unpopulated.
+The old `mesaitakip-privacy` GitHub Pages website is *not* the canonical site. It needs to remain a redirect only until app store or shared links no longer point to that GitHub Pages address. GitHub repo deletion is a separate destructive account-level operation, not part of the website deployment.

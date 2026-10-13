@@ -7,5 +7,5 @@ Contact: info@yucelsonmez.com.tr
 /* SITE */
 Language: Turkish
 Stack: Static HTML, CSS, dependency-free JavaScript
-Products: ŞafakSayar Plus, Mesai Pro
-Last update: 2026-10-07
+Products: ŞafakSayar, Mesai Pusulam
+Last update: 2026-10-13
