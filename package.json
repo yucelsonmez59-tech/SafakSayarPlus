@@ -1,9 +1,15 @@
 {
-  "name":"yucelsonmez-site",
-  "private":true,
-  "version":"1.0.0",
-  "description":"Static developer portfolio and product support pages.",
-  "type":"module",
-  "scripts":{"validate":"node scripts/validate-site.mjs"},
-  "engines":{"node":">=20"}
+  "name": "yucelsonmez-site",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Static mobile app developer portfolio and legal pages.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-site.mjs",
+    "test:v2": "node scripts/v2-contract.mjs",
+    "test": "npm run validate && npm run test:v2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
