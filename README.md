@@ -28,7 +28,7 @@ This is the **single canonical site source** for the developer homepage, **Mesai
 
 ## Clean source
 
-Shared `v2.css` and `v2.js`, native static HTML and policy documents; no paid hosting, runtime backend, CMS, template mockup photos, fake reviews, or extra landing framework. Original Mesai Pusulam iOS icon and ŞafakSayar app icon are maintained. Real screenshot spaces intentionally remain empty until final product screenshots are ready.
+Shared `v2.css` and `v2.js`, native static HTML and policy documents; no paid hosting, runtime backend, CMS, template mockup photos, fake reviews, or extra landing framework. Original Mesai Pusulam iOS icon and ŞafakSayar app icon are maintained. The Mesai Pusulam page displays eight product screenshots in a responsive gallery.
 
 Original visual inspiration: Bohdan's `app-landing` under MIT. Attribution/license retained as `LICENSE-app-landing`.
 
