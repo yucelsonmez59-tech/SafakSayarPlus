@@ -11,6 +11,8 @@ const urls=[
   "/mesai-pusulam/terms/",
   "/mesai-pusulam/support/",
   "/mesai-pusulam/data-safety/",
+  "/mesai-pusulam/fazla-mesai-hesaplama/",
+  "/mesai-pusulam/kidem-ihbar-tazminati-hesaplama/",
   "/safaksayar/",
   "/safaksayar/privacy/",
   "/safaksayar/terms/",
@@ -75,4 +77,8 @@ assert(!mesaiGallery.includes('Ekran görüntüleri henüz eklenmedi'),'placehol
 assert(mesaiGallery.includes('id="mp-gallery-dialog"'),'screenshot lightbox missing');
 assert(mesaiGallery.includes('href="/mesai-pusulam/gallery.css?v=1"'),'gallery styles missing');
 assert(mesaiGallery.includes('src="/mesai-pusulam/gallery.js?v=1"'),'gallery behavior missing');
+// Every Mesai Pusulam page offers the App Store Smart App Banner.
+for(const page of realPaths.filter(p=>p.startsWith('mesai-pusulam/')))assert(read(page).includes('<meta name="apple-itunes-app" content="app-id=6815601696">'),page+' smart app banner');
+assert(read('mesai-pusulam/index.html').includes('href="/mesai-pusulam/fazla-mesai-hesaplama/"'),'guide link missing');
+assert(read('mesai-pusulam/index.html').includes('href="/mesai-pusulam/kidem-ihbar-tazminati-hesaplama/"'),'guide link missing');
 console.log('Site contracts OK:',urls.length,'canonical URLs, 5 Mesai redirects, old root redirects, assets and policy links.');
