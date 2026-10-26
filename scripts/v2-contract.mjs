@@ -19,7 +19,12 @@ const urls=[
   "/safaksayar/support/",
   "/safaksayar/community/",
   "/safaksayar/data-safety/",
-  "/safaksayar/delete-account/"
+  "/safaksayar/delete-account/",
+  "/cv-hazirla/",
+  "/cv-hazirla/privacy/",
+  "/cv-hazirla/terms/",
+  "/cv-hazirla/support/",
+  "/cv-hazirla/data-safety/"
 ];
 const realPaths=urls.map(url=>url==='/'?'index.html':url.slice(1)+'index.html');
 
@@ -52,6 +57,9 @@ assert.match(read('index.html'),/src="\/assets\/mesai-pusulam-icon\.png"/);
 assert.match(read('safaksayar/index.html'),/id6817507399/);
 assert.match(read('safaksayar/privacy/index.html'),/AdMob/);
 assert.match(read('safaksayar/delete-account/index.html'),/Hesap silme talebi gönder/);
+assert.match(read('index.html'),/href="\/cv-hazirla\/"/);
+assert.match(read('cv-hazirla/privacy/index.html'),/internete bağlanmaz/);
+assert.match(read('cv-hazirla/data-safety/index.html'),/Data Not Collected/);
 assert.match(read('app-ads.txt'),/^google\.com, pub-[0-9]+, DIRECT, /);
 assert.equal(read('CNAME').trim(),'yucelsonmez.com.tr');
 assert.match(read('robots.txt'),/Sitemap: https:\/\/yucelsonmez\.com\.tr\/sitemap\.xml/);

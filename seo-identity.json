@@ -8,7 +8,9 @@
     "iOS",
     "Android",
     "Dart",
-    "Mobile Application Development"
+    "Mobile Application Development",
+    "React Native",
+    "Expo"
   ],
   "profiles": [
     "https://github.com/yucelsonmez59-tech"
@@ -21,6 +23,10 @@
     {
       "name": "Mesai Pusulam",
       "url": "https://yucelsonmez.com.tr/mesai-pusulam/"
+    },
+    {
+      "name": "CV Hazırla",
+      "url": "https://yucelsonmez.com.tr/cv-hazirla/"
     }
   ]
 }

@@ -4,7 +4,7 @@
 **Source repository:** yucelsonmez59-tech/SafakSayarPlus  
 **Hosting:** GitHub Pages, main branch, repository root, custom domain via CNAME
 
-This is the **single canonical site source** for the developer homepage, **Mesai Pusulam** and **ŞafakSayar**.
+This is the **single canonical site source** for the developer homepage, **Mesai Pusulam**, **ŞafakSayar** and **CV Hazırla**.
 
 ## Canonical paths
 
@@ -23,6 +23,11 @@ This is the **single canonical site source** for the developer homepage, **Mesai
 | Şafak community | `/safaksayar/community/` |
 | Şafak data safety | `/safaksayar/data-safety/` |
 | Şafak account deletion | `/safaksayar/delete-account/` |
+| CV Hazırla | `/cv-hazirla/` |
+| CV privacy | `/cv-hazirla/privacy/` |
+| CV terms | `/cv-hazirla/terms/` |
+| CV support | `/cv-hazirla/support/` |
+| CV data safety | `/cv-hazirla/data-safety/` |
 
 **Redirect compatibility only:** `/mesaitakip/` and its privacy, terms, support and data-safety paths are simple HTML redirects to the canonical Mesai Pusulam equivalents. Root legacy links like `/privacy.html` remain redirects, not duplicate documents. GitHub Pages does not provide editable HTTP 301 rules, so these are HTML meta redirects with `noindex` and canonical to their new destinations. Update external store links when editable; then these old compatibility routes can be retired later if desired.
 
